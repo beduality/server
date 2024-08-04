@@ -1,0 +1,16 @@
+/world/
+/logs/
+/paper*.jar
+/banned-ips.json
+/banned-players.json
+/whitelist.json
+/usercache.json
+/ops.json
+/plugins/PluginMetrics
+/plugins/bStats
+/crash-reports
+/versions
+/version_history.json
+/cache
+/.console_history
+/libraries
