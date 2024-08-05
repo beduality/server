@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  lusci:
+    image: eclipse-temurin:21-jre-alpine
+    container_name: bed-server
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/opt/server
+    working_dir: /opt/server
+    command: ["java", "-Xms1G", "-Xmx2G", "-jar", "paper.jar", "--nogui"]

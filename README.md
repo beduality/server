@@ -8,6 +8,7 @@ This project contains configurations, scripts, and resources to set up and manag
 - **World Management**: Unzipping worlds.
 - **Pre-configured Files**: Essential server configurations ready to use.
 - **Easy Server Management**: Script to start the server effortlessly.
+- **Docker Compose Support**: Simplifies deployment with Docker, including production setup.
 
 ## Prerequisites
 
@@ -17,6 +18,8 @@ Before you begin, ensure you have installed on your system the following require
 - **Java**: The server requires Java 21 or higher.
 - **wget**: Required for downloading files in the scripts.
 - **unzip**: Required for extracting downloaded worlds.
+- **Docker**: Required for running the Docker container.
+- **Docker Compose**: Required for managing Docker containers.
 
 ## Installation
 
@@ -32,23 +35,29 @@ Before you begin, ensure you have installed on your system the following require
     Execute the setup script to download the PaperMC jar and unzip the worlds:
 
     ```bash
-    ./scripts/prepare.sh
+    bash ./scripts/prepare.sh
     ```
 
 ## Usage
 
-### Setup
+### Development Mode
 
-To start the Minecraft server, run the following script:
+To start the server in development mode, run the following script:
 
 ```bash
-./scripts/start.sh
+bash ./scripts/dev.sh
 ```
 
-### Stopping the Server
+### Production Mode
 
-To stop the server gracefully, you can use the stop script:
+To start the server in production mode using Docker Compose, run the following command:
 
 ```bash
-./scripts/stop.sh
+docker compose up -d
+```
+
+To stop the server in production mode, use:
+
+```bash
+docker compose down
 ```
