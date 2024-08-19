@@ -10,9 +10,9 @@
 
 - [x] Unzip worlds and move them to `./`
 - [x] Download PaperMC and move it to `./`
-- Download latest plugin jar from GitHub
-    - Move into `plugins/`
+- [ ] Download latest plugin jar from GitHub
+    - [ ] Move into `plugins/`
 
 ## Docker-compose
 
-- [] Add `docker-compose.yml`
+- [x] Add `docker-compose.yml`
